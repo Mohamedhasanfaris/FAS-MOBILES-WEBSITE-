@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAS MOBILES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assest/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+    <!-- Header Section -->
+    <header>
+        <h1>FAS MOBILES</h1>
+    </header>
+   <!-- Home Section -->
+<section id="home">
+    <div class="container">
+        <h1>Welcome Foodie</h1>
+        <p>"Hello, savvy shopper! 👋 Welcome to FAS MOBILES.💖</p>
+        <p>Explore endless possibilities, find your perfect match, and indulge in the joy of shopping! 🛒✨"</p>
+        <!-- Call-to-Action -->
+        <div class="cta">
+            <p>Explore Our Menu</p>
+            <a href="#menu" class="btn">Menu</a>
+        </div>
+    </div>
+</section>
+    <!-- Menu Section -->
+    <section id="menu">
+        <h3>SAMSUNG MOBILES</h3>
+        <div class="menu-category" id="SAMSUNG MOBILES">
+           <div class="menu-item" onclick="addToCart('Samsung Galaxy S23 5G ',79999)">
+                <img src="img/samsung 1.jpg" alt="Samsung Galaxy S23 5G ">
+                <h2>Samsung Galaxy S23 5G (Lavender, 8GB, 256GB Storage)</h2>
+                <p>₹79,999</p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Samsung Galaxy S23 Ultra 5G',99999)">
+                <img src="img/samsung 2.jpg" alt="Samsung Galaxy S23 Ultra 5G ">
+                <h2>Samsung Galaxy S23 Ultra 5G (Phantom Black, 12GB, 256GB Storage)</h2>
+                <p>₹99,999</p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Samsung Galaxy Note10+',52799)">
+                <img src="img/samsung 3.jpg" alt="Samsung Galaxy Note10+ ">
+                <h2>Samsung Galaxy Note10+ (Aura Black, 12GB RAM, 256GB Storage)</h2>
+                <p>₹52,799</p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Samsung Galaxy S22 Ultra 5G',84999)">
+                <img src="img/samsung 4.jpg" alt="Samsung Galaxy S22 Ultra 5G ">
+                <h2>Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage)</h2>
+                <p>₹84,999</p>
+            </div>
+        </div>
+
+        <h3>IPHONE</h3>
+        <div class="menu-category" id="IPHONE">
+            <div class="menu-item" onclick="addToCart('iPhone 15', 79000)">
+                <img src="img/i.jpg" alt="iPhone 15">
+                <h2>iPhone 15 (128 GB) - Black</h2>
+                <p>₹79,000</p>
+            </div>
+            <div class="menu-item" onclick="addToCart('iPhone 15 Pro',134900)">
+                <img src="img/i 2.jpg" alt="iPhone 15 Pro ">
+                <h2>iPhone 15 Pro (128 GB) - Blue Titanium</h2>
+                <p>₹1,34,900</p>
+            </div>
+            <div class="menu-item" onclick="addToCart('iPhone 13', 51499)">
+                <img src="img/i 3.jpg" alt="iPhone 13 ">
+                <h2>iPhone 13 (128GB) - Starlight</h2>
+                <p>₹51,499</p>
+            </div>
+            <div class="menu-item" onclick="addToCart('iPhone 15 Pro Max', 159900)">
+                <img src="img/i 4.jpg" alt="iPhone 15 Pro Max">
+                <h2>iPhone 15 Pro Max (256 GB) - Natural Titanium</h2>
+                <p>₹1,59,900</p>
+            </div>
+        </div>
+        <h3>REALME MObiles</h3>
+        <div class="menu-category" id="REALME MObiles">
+            <div class="menu-item" onclick="addToCart('Realme narzo N53',11999)">
+                <img src="img/r 1.jpg" alt="Realme narzo N53 ">
+                <h2>Realme narzo N53 (Feather Gold, 8GB+128GB)</h2>
+                <p>₹11,999</p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Realme narzo 60X 5G', 14499)">
+                <img src="img/r 2.jpg" alt="Realme narzo 60X 5G ">
+                <h2>Realme narzo 60X 5G (Stellar Green,6GB,128GB Storage)</h2>
+                <p>₹14,499</p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Realme 11 Pro 5G', 24356)">
+                <img src="img/r 3.jpg" alt="Realme 11 Pro 5G ">
+                <h2>Realme 11 Pro 5G (Sunrise Beige, 8GB RAM, 256GB Storage)</h2>
+                <p>₹24,356</p>
+            </div>
+            <div class="menu-item" onclick="addToCart('Realme narzo 60 Pro', 21,999)">
+                <img src="img/r 4.jpg" alt="Realme narzo 60 Pro">
+                <h2>Realme narzo 60 Pro (Mars Orange,8GB+128GB) </h2>
+                <p>₹21,999</p>
+            </div>
+        </div>
+    </section>
+   <!-- Shopping Cart Section -->
+<section id="cart">
+    <h2>Your Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: ₹<span id="total">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+</section>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 FOODO FOODS</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="Assest/script.js"></script>
+</body>
+</html>
