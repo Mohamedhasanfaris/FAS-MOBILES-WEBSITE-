@@ -11,7 +11,7 @@ h1, h2, h3, p, nav a, section#home a.btn, footer {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+   
     background-color: #3498db;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 15px 30px;
@@ -19,15 +19,18 @@ nav {
 }
 nav:hover {
     background-color: #004d7f;
+    transition: background-color 0.3s ease-in-out;
 }
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    align-items: center;
     display: flex;
 }
 nav li {
     margin-right: 15px;
+    align-items: center;
 }
 nav a {
     text-decoration: none;
@@ -38,6 +41,7 @@ nav a {
 }
 nav a:hover {
     color: #ecf0f1;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }
 header {
     background-color: #e74c3c;
@@ -65,13 +69,13 @@ header {
     margin: 0 auto;
 }
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 20px;
 }
 p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 15px;
+    font-size: 1.4em;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 ul {
     list-style-type: none;
@@ -85,19 +89,20 @@ li {
 }
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
     background-color: #ff4500;
     color: #fff;
     border-radius: 5px;
     border: 2px solid #e67e22;
     font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease;
 }
 .btn:hover {
     background-color: #e04100;
     color: #fff;
     border: 2px solid #d35400;
+    transform: scale(1.05);
 }
 #menu {
     padding: 20px;
@@ -181,18 +186,6 @@ li {
 }
 #cart-items li button:hover {
     background-color: #176B87;
-}
-footer {
-    background-color: #005c99;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    border-top: 3px solid #2c3e50;
-}
-footer p {
-    margin: 0;
-    font-size: 16px;
 }
 button {
     background-color: #1F4172;
